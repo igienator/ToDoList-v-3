@@ -1,0 +1,48 @@
+<%- include('partials/header.ejs') %>
+
+<div class="header">
+  <h1>To Do List</h1>
+  <h3><%-listTitle%></h3>
+</div>
+<div class="list">
+  <!-- <div class="list-element form-check">
+    <input class="checkbox form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div> -->
+
+  <% listObjects.forEach(function(object) { %>
+    <form class="" action="/deletepost" method="post">
+      <input class="checkbox form-check-input" name="checkbox" type="checkbox" value="<%=object._id%>" id="flexCheckDefault" onChange="this.form.submit()" />
+      <label class="form-check-label" for="flexCheckDefault">
+        <%=object.item%>
+      </label>
+    </form>
+
+<%  }); %>
+
+
+</div>
+<div class="add-element">
+  <form class="" action="/add" method="post">
+    <div class="form-floating">
+      <input type="text" name="newItemToAdd" class="form-control" id="floatingInput" placeholder="new element">
+      <label for="floatingInput">Add Element</label>
+    </div>
+    <button class="btn-add btn btn-secondary" type="submit" name="button">+</button>
+  </form>
+
+</div>
+<div class="footer">
+  <form action="/logout" method="post">
+  <button class="btn-secondary" type="submit" name="button">Logout</button>
+</form>
+  <br><br><form action="/delete" method="post">
+    <button class="btn-secondary" type="submit" name="button">Delete List</button>
+  </form>
+
+  <p class="mt-5 mb-3 text-muted">&copy; Kamil Ignaczak 2021</p>
+</div>
+
+<%- include('partials/footer.ejs') %>

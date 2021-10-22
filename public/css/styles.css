@@ -1,0 +1,95 @@
+/* https://colorhunt.co/palette/7c83fd96baff7dedff88fff7 */
+/* bootstrap copied */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* display: flex; */
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5; 
+
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+/* my own */
+
+.header {
+  position: static;
+  text-align: center;
+  margin: 1rem;
+}
+.login-form {
+  display: flex;
+    position: static;
+    margin: 0 45%;
+}
+
+.logo {
+  font-size: 6rem;
+  text-align: center;
+  margin: 15px;
+
+}
+
+.list {
+  margin: auto;
+  width: 30%;
+  border: 3px solid #7DEDFF;
+  padding: 10px;
+}
+.list-element {
+border: 1px solid #7DEDFF;
+border-radius: 30px;
+background-color: #88FFF7;
+text-align: center;
+}
+.checkbox {
+  left: 2px;
+}
+.add-element {
+  display: flex;
+  margin: auto;
+  width: 10%;
+  text-align: center;
+}
+.form-add {
+display: flex;
+}
+.btn-add {
+  border-radius: 50%;
+}
+.footer {
+  margin-top: 100px;
+  text-align: center;
+}
